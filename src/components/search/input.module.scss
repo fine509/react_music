@@ -1,0 +1,17 @@
+.box {
+    border:1px solid #F2D1BC;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: .4rem;
+    margin: .1rem .15rem;
+    background-color: #fff;
+    img {
+        width: .2rem;
+        height: .2rem;
+        margin-right: .1rem;
+    }
+    span {
+        color: #999;
+    }
+}
