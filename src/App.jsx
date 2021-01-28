@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import store from "@/redux/index";
 import MHAppHeader from "components/app-header/index";
 import MHAppFooter from "components/app-footer/index";
-import MHDiscover from "views/discover/index.jsx";
+import MHDiscover from "views/discover/index.tsx";
 import MHFriends from "views/friends/index.jsx";
 import MHMine from "views/mine/index.jsx";
 
