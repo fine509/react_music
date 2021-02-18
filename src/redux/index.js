@@ -1,4 +1,5 @@
-import { createStore, combineReducers, applyMiddleware, compose } from "redux";
+import { createStore, applyMiddleware, compose } from "redux";
+import {combineReducers} from 'redux-immutable'
 import thunk from 'redux-thunk'
 import recommend from "./reduces/recommend";
 const reducer = combineReducers({

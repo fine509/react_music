@@ -3,19 +3,20 @@ import { NavLink } from "react-router-dom";
 import discoverStyle from "./discoverStyle.module.scss";
 import { connect, useDispatch, useSelector, shallowEqual } from "react-redux";
 import { getBannerAction } from "@/redux/actions/recommend";
-function MHDiscover(props) {
+import RenderRoutes from "../../router/routerRender";
+const MHDiscover = (props) => {
   //使用redux hooks关联redux
   const dispatch = useDispatch();
   const recommend = useSelector(
     (state) => ({
-      banner: state.recommend.get("banner"),
+      banner: state.getIn(["recommend", "banner"]),
     }),
     shallowEqual
   );
+  console.log(recommend.banner);
   useEffect(() => {
     dispatch(getBannerAction());
   }, [dispatch]);
-  console.log(recommend.banner);
   return (
     <div>
       <div className={[discoverStyle["bigBox"]]}>
@@ -56,7 +57,7 @@ function MHDiscover(props) {
       </div>
     </div>
   );
-}
+};
 // const mapStateToProps = state => ({
 //     banner: state.recommend.banner
 // })
@@ -64,4 +65,11 @@ function MHDiscover(props) {
 //     getBanner: (url)=>{dispatch(getBannerAction(url))}
 // // // })
 // // export default connect(mapStateToProps,mapPropsToProp)(memo(MHDiscover))
-export default memo(MHDiscover);
+export default memo(function (props) {
+  const { route } = props;
+  return (
+    <MHDiscover>
+      <RenderRoutes routes={route.children} />
+    </MHDiscover>
+  );
+});
