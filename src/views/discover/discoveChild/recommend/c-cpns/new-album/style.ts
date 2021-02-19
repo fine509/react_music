@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AlbumWrapper = styled.div`
   margin-top: 50px;
-
+   
   .content {
     height: 186px;
     background-color: #f5f5f5;
@@ -41,4 +41,64 @@ export const AlbumWrapper = styled.div`
       }
     }
   }
+  .ablumCar{
+    position:relative;
+    box-sizing:border-box;
+    width:100%;
+    height:186px;
+    padding:30px 20px 20px 40px;
+    margin-top:20px;
+    margin-right:-5px;
+    border:1px solid #D3D3D3;
+    background-color:#F5F5F5;
+    section{
+      display:inline-block;
+      box-sizing:border-box;
+      width:20%;
+      img{
+        width:100px;
+        height:100px;
+      }
+      p {
+        width:100px;
+        overflow:hidden;
+	      text-overflow:ellipsis;
+	      white-space:nowrap;
+        margin: 4px 0;
+      }
+    
+    }
+    
+    .rightNav {
+      position:absolute;
+      right:10px;
+      top:50%;
+      transform:translateY(-50%);
+      cursor:pointer;
+    }
+    .leftNav {
+      position:absolute;
+      left:10px;
+      top:50%;
+      transform:translateY(-50%);
+      cursor:pointer;
+    }
+  }
+  .active {
+    section:nth-child(5-n){
+        display:block;
+      }
+    section:nth-child(n+6){
+        display:none;
+      }
+    }
+    .active2{
+      section:nth-child(5-n){
+        display:none;
+      }
+      section:nth-child(n+6){
+        display:block;
+      }
+    }
+
 `

@@ -32,6 +32,6 @@ const ThmemRecommend: React.FC<IthemeProps> = memo((props) => {
 })
 ThmemRecommend.defaultProps={
     title:'默认',
-    keywords:['默认数据']
+    keywords:[]
 }
 export default ThmemRecommend

@@ -8,3 +8,8 @@ export const getBanner = async ()=>{
 export const getHotRecommend = async (limit)=>{
     return await request.get(BASE_URL+'/personalized',{limit})
 }
+
+export const getHotAblum = async (limit) => {
+    return await request.get(BASE_URL+'/top/album',{limit})
+    
+}
