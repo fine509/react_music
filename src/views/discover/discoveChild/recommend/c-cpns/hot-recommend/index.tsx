@@ -7,6 +7,7 @@ import { GETHOTRECOMMEND } from '../types'
 
 import {HotRecommendWrapper} from './style'
 import ThmemRecommend from '../../../../../../components/theme-header-recommend/index'
+import SongCover from '../../../../../../components/songs-cover/index'
 const HotRecommend:React.FC<{}> =  memo(() => {
 
 
@@ -22,7 +23,11 @@ const HotRecommend:React.FC<{}> =  memo(() => {
     return (
         <HotRecommendWrapper>
             <ThmemRecommend title="热门推荐" keywords={['华语','流行','摇滚','民谣','电子']}></ThmemRecommend>
-
+            <main className="recommend-list">
+                {recommend.hotRecommend&&recommend.hotRecommend.map((item:any)=>{
+                    return <SongCover item={item} key={item.picUrl}></SongCover>
+                })}
+            </main>
         </HotRecommendWrapper>
     )
 })
