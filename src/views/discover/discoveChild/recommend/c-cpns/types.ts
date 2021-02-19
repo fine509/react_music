@@ -1,0 +1,1 @@
+export const GETHOTRECOMMEND = 8

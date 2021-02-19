@@ -1,1 +1,2 @@
 export const SUBMITBANNER = 'SUBMITBANNER'
+export const SUBMITHOTREM = 'SUBMITHOTREM'

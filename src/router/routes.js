@@ -14,7 +14,7 @@ const routes = [
                         path: '/discover/recommend',
                         key: 'recommend',
                         exact:true,
-                        component: React.lazy(() => import(/* webpackChunkName: 'Layout' */ '../views/discover/discoveChild/broadcasting/index'))
+                        component: React.lazy(() => import(/* webpackChunkName: 'Layout' */ '../views/discover/discoveChild/recommend/index'))
                     },
                     {
                         path: '/discover/seniority',
