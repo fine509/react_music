@@ -8,7 +8,6 @@ class Store {
     Ablumdata:any
     async getHotAblum(limit:number){
      let data = await getHotAblum(limit)
-     console.log(data?.data?.albums)
      this.getAblumData(data?.data?.albums)
     }
     getAblumData(data:any){

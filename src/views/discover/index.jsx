@@ -61,7 +61,7 @@ export default memo(function (props) {
   const { route } = props;
   return (
     <MHDiscover>
-      <RenderRoutes routes={route.children} />
+      <RenderRoutes routes={route.children} redirect={{to:'/discover',jump:'/discover/recommend'}} />
     </MHDiscover>
   );
 });

@@ -66,7 +66,10 @@ export const AlbumWrapper = styled.div`
 	      white-space:nowrap;
         margin: 4px 0;
       }
-    
+      a {
+        width:100px;
+        height:100px;
+      }
     }
     
     .rightNav {
@@ -85,19 +88,19 @@ export const AlbumWrapper = styled.div`
     }
   }
   .active {
-    section:nth-child(5-n){
-        display:block;
+    section:nth-child(n-5){
+        display:inline-block;
       }
     section:nth-child(n+6){
         display:none;
       }
     }
     .active2{
-      section:nth-child(5-n){
+      section:nth-child(n-5){
         display:none;
       }
       section:nth-child(n+6){
-        display:block;
+        display:inline-block;
       }
     }
 

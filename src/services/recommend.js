@@ -13,3 +13,7 @@ export const getHotAblum = async (limit) => {
     return await request.get(BASE_URL+'/top/album',{limit})
     
 }
+
+export const getTopList = async (idx) => {
+    return await request.get(BASE_URL+'/top/list', {idx})
+}
