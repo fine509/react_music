@@ -1,3 +1,4 @@
+import { Map } from "immutable";
 import {
   SUBMITBANNER,
   SUBMITHOTREM,
@@ -5,7 +6,6 @@ import {
   SUBMITNEWSONGTOPLIST,
   SUBMITORIGINTOPLIST,
 } from "../action-type";
-import { Map } from "immutable";
 const defaultState = Map({
   banner: [1, 2, 3],
   hotRecommend: [],

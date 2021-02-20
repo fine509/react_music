@@ -22,9 +22,6 @@ const Ranking: React.FC<{}> = memo(() => {
     dispatch(getTopListData(2));
     dispatch(getTopListData(3));
   });
-  console.log(recommend.flyUpTopList);
-  console.log(recommend.originTopList);
-  console.log(recommend.newSongTopList);
 
   return (
     <RankingWrapper>

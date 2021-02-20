@@ -4,43 +4,13 @@ import btnUrl from '../../../../../../assets/img/banner_sprite.png'
 export const BannerWrapper = styled.div`
   .banner {
     height: 270px;
-    /* background-color: red; */
+    background-color: red;
+
     display: flex;
     position: relative;
-    .slick-slide{
-    display:none!important;
-  }
-  .slick-active{
-    position:static!important;
-    display:inline-block!important;
-    button{
-      text-align:center;
-      background-color:rgba(0,0,0,.5)!important;
-      border-radius:50%;
-    }
-  }
-  .slick-dots{
-    position:absolute;
-    bottom:10px;
-    left:45%;
-    transform:translateX(-70%);
-    width:350px!important;
-    background-color:transparent!important;
-    li {
-      display:inline-block;
-      margin:0 5px;
-      button{
-        width:25px;
-      height:25px;
-      text-align:center;
-        background-color:transparent;
-        color:#000;
-        cursor:pointer;
-      }
-    }
-  }
   }
 `
+
 
 export const BannerLeft = styled.div`
   width: 730px;

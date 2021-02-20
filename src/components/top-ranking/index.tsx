@@ -41,7 +41,9 @@ const TopRanking: React.FC<Iporps> = memo((props) => {
             );
           })}
       </main>
-      <footer className="footer"></footer>
+      <footer className="footer">
+        <a href="todo">查看更多</a>
+      </footer>
     </TopRankingWrapper>
   );
 });

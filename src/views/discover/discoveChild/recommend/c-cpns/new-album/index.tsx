@@ -34,8 +34,9 @@ const Album: React.FC<{ store: any }> = observer((props) => {
         {store.Ablumdata &&
           store.Ablumdata.map((item: any, index: any) => {
             return (
-              <section key={index} >
+              <section key={index} className="sprite_covor">
                 <img src={getSizeImg(item.blurPicUrl, 100)} alt="" />
+                <a href="todo" className="sprite_covor"></a>
                 <p>{item.name}</p>
                 <p>{item.artist.name}</p>
               </section>

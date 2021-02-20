@@ -10,7 +10,6 @@ import Album from './c-cpns/new-album/index'
 import Ranking from './c-cpns/rem-ranking/index'
 const Recommend:React.FC<{}> = (props)=>{
     const history = useHistory()
-    console.log(history)
     return <RecommendWrapper>
         <TopBanner></TopBanner>
         <Content className="wrap-v2">
