@@ -1,5 +1,4 @@
 import axios from "axios";
-import { BASE_URL, TIMEOUT } from "./config.js";
 const request = {
   get: (url, params = {}) => {
     return axios.get(url, { params });

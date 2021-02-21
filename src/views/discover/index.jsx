@@ -1,12 +1,12 @@
-import React, { memo, useEffect } from "react";
+import React, { memo } from "react";
 import { NavLink } from "react-router-dom";
 import discoverStyle from "./discoverStyle.module.scss";
 import RenderRoutes from "../../router/routerRender";
-import { useHistory } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 const MHDiscover = (props) => {
   //使用redux hooks关联redux
-  const history = useHistory()
-  const pathName = history.location.pathname.split('/')[2]
+  // const history = useHistory()
+  // // // const pathName = history.location.pathname.split('/')[2]
  
   return (
     <div>

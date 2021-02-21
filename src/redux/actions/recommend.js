@@ -1,4 +1,3 @@
-import request from "@/services/request";
 import {
   SUBMITBANNER,
   SUBMITHOTREM,
