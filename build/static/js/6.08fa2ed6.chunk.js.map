@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/mine/index.jsx"],"names":["memo"],"mappings":"yHAEeA,0BAAK,WAChB,OACI","file":"static/js/6.08fa2ed6.chunk.js","sourcesContent":["import React, { memo } from 'react'\r\n\r\nexport default memo(function MHMine() {\r\n    return (\r\n        <div>\r\n        MHMine\r\n        </div>\r\n    )\r\n})\r\n"],"sourceRoot":""}

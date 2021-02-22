@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 
-import "assets/css/reset.css" 
+import "assets/css/reset.scss" 
 import App from './router/index'
 
 ReactDOM.render(

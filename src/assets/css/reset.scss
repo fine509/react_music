@@ -118,4 +118,24 @@ body, html, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, header, menu, sectio
     color: #fff;
   }
   
-  
+  .lyric {
+    position:fixed;
+    left: 50%;
+    bottom:73px;
+    transform:translateX(-50%);
+    width:auto;
+    height:32px;
+    min-width:120px;
+    padding:4px;
+    .ant-message-notice-content{
+      color:#fff;
+      text-align:center;
+      line-height:27px;
+      border-radius:4px;
+      font-size:16px;
+      background-color:rgba(0,0,0,.5)!important;
+    }
+    .anticon-info-circle {
+      display: none;
+    }
+  }

@@ -18,7 +18,7 @@ const HotRecommend:React.FC<{}> =  memo(() => {
     useMount(()=>{
         dispatch(getHotRecommendData(GETHOTRECOMMEND))
     })
-
+    console.log(recommend?.hotRecommend);
     return (
         <HotRecommendWrapper>
             <ThmemRecommend title="热门推荐" keywords={['华语','流行','摇滚','民谣','电子']}></ThmemRecommend>

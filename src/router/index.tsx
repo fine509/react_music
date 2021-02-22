@@ -1,4 +1,4 @@
-import React,{memo} from 'react'
+import React from 'react'
 import {BrowserRouter} from 'react-router-dom'
 import RenderRoutes from './routerRender'
 import routes from './routes'

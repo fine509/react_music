@@ -1,4 +1,4 @@
-import React, { memo, useState } from "react";
+import React, {  useState } from "react";
 import { observer } from "mobx-react";
 import { useMount } from "react-use";
 import { RightOutlined, LeftOutlined } from "@ant-design/icons";
@@ -36,7 +36,7 @@ const Album: React.FC<{ store: any }> = observer((props) => {
             return (
               <section key={index} className="sprite_covor">
                 <img src={getSizeImg(item.blurPicUrl, 100)} alt="" />
-                <a href="todo" className="sprite_covor"></a>
+                <a href="/recommend" className="sprite_covor"></a>
                 <p>{item.name}</p>
                 <p>{item.artist.name}</p>
               </section>

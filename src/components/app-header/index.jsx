@@ -1,7 +1,5 @@
 import React, { memo, useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-import { useMount } from 'react-use'
-import cx from "classnames";
 import AppHeaderStyle from "./style.module.scss";
 
 

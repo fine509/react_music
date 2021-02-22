@@ -12,7 +12,7 @@ interface IoperatorProps {
     sequence: number
 }
 export const AppPlayWrapper = styled.div`
-      position: fixed;
+  position: fixed;
   z-index: 99;
   left: 0;
   right: 0;
@@ -20,6 +20,7 @@ export const AppPlayWrapper = styled.div`
   height: 52px;
   background-position: 0 0;
   background-repeat: repeat;
+  
   .content {
       display:flex;
       align-items:center;
@@ -135,7 +136,10 @@ export const Operator = styled.div`
     height: 25px;
     cursor:pointer;
   }
-
+  .lyricShow{
+    background-color:transparent;
+    color:#fff;
+  }
   .favor {
     background-position: -88px -163px;
   }
