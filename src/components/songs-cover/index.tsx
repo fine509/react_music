@@ -1,7 +1,7 @@
 import React,{memo} from 'react'
 
 import {SongsCoverWrapper} from './style'
-import {getCount, getSizeImg} from '../../utils/data_format'
+import {getCount, getSizeImg} from '@/utils/data_format'
 const SongCover:React.FC<{item:any}> = memo((props) => {
     const {item} = props
 

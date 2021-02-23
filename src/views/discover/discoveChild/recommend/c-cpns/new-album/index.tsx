@@ -6,10 +6,10 @@ import cx from "classnames";
 
 import store from "./store";
 import { GETHOTABLUM } from "../types";
-import { getSizeImg } from "../../../../../../utils/data_format";
+import { getSizeImg } from "@/utils/data_format";
 
 import { AlbumWrapper } from "./style";
-import ThmemRecommend from "../../../../../../components/theme-header-recommend/index";
+import ThmemRecommend from "@/components/theme-header-recommend/index";
 const Album: React.FC<{ store: any }> = observer((props) => {
   const { store } = props;
   const [chooseactive, setchooseactive] = useState(true);

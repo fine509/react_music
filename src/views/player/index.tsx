@@ -2,12 +2,12 @@ import React, {memo} from 'react'
 import { useHistory } from 'react-router-dom'
 import {useDispatch, useSelector, shallowEqual} from 'react-redux'
 
-import {getSizeImg} from '../../utils/data_format'
+
+import {getSizeImg} from '@/utils/data_format'
 import {PlayerWrapper} from './style'
 const Player:React.FC<{}> = memo((props)=>{
     //hooks
     const history = useHistory()
-
     //redux
     const {currentSong, lyric} = useSelector((state: any)=>({
         currentSong: state.getIn(["player", "currentSong"]),
@@ -49,8 +49,8 @@ const Player:React.FC<{}> = memo((props)=>{
                     <a href="">评论</a>
                 </div>
                 <div className="play-lyric">
-                    {lyric.map((item:any)=>{
-                        return <h3 key={item.content}>{item.content}</h3>
+                    {lyric.map((item:{time:string, content:string}, index:number)=>{
+                        return <h3 key={index}>{item.content}</h3>
                     })}
                 </div>
             </div>

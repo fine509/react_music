@@ -1,4 +1,4 @@
-import { getSongDetailData, getLyric } from "../../services/player";
+import { getSongDetailData, getLyric } from "@/services/player";
 import {
   SUBMITSONGDETAIL,
   CHANGEPLAYLISTINDEX,
@@ -8,7 +8,7 @@ import {
   CHANGELYRICINDEX,
 } from "../action-type";
 import { Iaction, Sequence } from "../type";
-import { transfromLyric } from "../../utils/data_format";
+import { transfromLyric } from "@/utils/data_format";
 
 export const actions = (data: Iaction): Iaction => ({
   type: data.type,

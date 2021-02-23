@@ -5,19 +5,19 @@ import { useMount } from "react-use";
 import { message } from "antd";
 import { NavLink } from 'react-router-dom'
 
-import { Sequence } from "../../../redux/type";
+import { Sequence } from "@/redux/type";
 import {
   getSongDetial,
   changeSequence,
   changePlayListIndex,
   changeLyricIndex,
-} from "../../../redux/actions/player";
+} from "@/redux/actions/player";
 import {
   getSizeImg,
   transformTime,
   getMusicUrl,
   getRandom,
-} from "../../../utils//data_format";
+} from "@/utils/data_format";
 
 import { AppPlayWrapper, Control, Operator, PlayInfo } from "./style";
 

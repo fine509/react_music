@@ -1,8 +1,8 @@
 import React, { memo } from "react";
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
 
-import { getSizeImg } from "../../utils/data_format";
-import { getSongDetial } from "../../redux/actions/player";
+import { getSizeImg } from "@/utils/data_format";
+import { getSongDetial } from "@/redux/actions/player";
 
 import { TopRankingWrapper } from "./style";
 interface Iporps {

@@ -1,11 +1,11 @@
 import React, { memo } from "react";
 import { useMount } from "react-use";
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
-import { getTopListData } from "../../../../../../redux/actions/recommend";
+import { getTopListData } from "@/redux/actions/recommend";
 
 import { RankingWrapper } from "./style";
-import ThmemRecommend from "../../../../../../components/theme-header-recommend/index";
-import TopRanking from "../../../../../../components/top-ranking/index";
+import ThmemRecommend from "@/components/theme-header-recommend/index";
+import TopRanking from "@/components/top-ranking/index";
 const Ranking: React.FC<{}> = memo(() => {
   //redux
   const dispatch = useDispatch();
