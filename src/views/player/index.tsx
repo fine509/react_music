@@ -1,5 +1,5 @@
 import React, {memo} from 'react'
-import { useHistory } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import {useDispatch, useSelector, shallowEqual} from 'react-redux'
 
 
@@ -7,7 +7,7 @@ import {getSizeImg} from '@/utils/data_format'
 import {PlayerWrapper} from './style'
 const Player:React.FC<{}> = memo((props)=>{
     //hooks
-    const history = useHistory()
+    const location = useLocation()
     //redux
     const {currentSong, lyric} = useSelector((state: any)=>({
         currentSong: state.getIn(["player", "currentSong"]),

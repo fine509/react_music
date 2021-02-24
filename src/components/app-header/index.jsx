@@ -1,11 +1,11 @@
 import React, { memo, useState } from "react";
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import AppHeaderStyle from "./style.module.scss";
 
 
 export default memo(function MHAppHeader() {
-    const history = useHistory();
-        const path = history.location.pathname.split("/")[1];
+    const location = useLocation();
+        const path = location.pathname.split("/")[1];
     const [pathName, setpathName] = useState(path)
 
   
@@ -19,7 +19,7 @@ export default memo(function MHAppHeader() {
           <NavLink
             to="/discover"
             className={pathName === "discover" ? AppHeaderStyle["active"] : ""}
-            exact
+            exact = "true"
             onClick={()=>{setpathName('discover')}}
           >
             发现音乐
@@ -28,7 +28,7 @@ export default memo(function MHAppHeader() {
           <NavLink
             to="/friends"
             className={pathName === "friends" ? AppHeaderStyle["active"] : ""}
-            exact
+            exact = "true"
             onClick={()=>{setpathName('friends')}}
           >
             我的音乐
@@ -36,7 +36,7 @@ export default memo(function MHAppHeader() {
           <NavLink
             to="/mine"
             className={pathName === "mine" ? AppHeaderStyle["active"] : ""}
-            exact
+            exact = "true"
             onClick={()=>{setpathName('mine')}}
           >
             朋友

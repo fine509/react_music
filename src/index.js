@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-
+import { useNavigate, Navigate, Routes, Route, useRoutes, Outlet, BrowserRouter } from 'react-router-dom'
 
 import "assets/css/reset.scss" 
-import App from './router/index'
+import App from './router/index1'
 
 ReactDOM.render(
-
-    <App/>
+  <BrowserRouter>
+  <React.Suspense fallback={<div>loading....</div>}>
+      <App/>
+   </React.Suspense>
+  </BrowserRouter>
+  
 
 ,
   document.getElementById('root')
