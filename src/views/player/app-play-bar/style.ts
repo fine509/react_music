@@ -147,7 +147,7 @@ export const Operator = styled.div`
   .share {
     background-position: -114px -163px;
   }
-
+  
   .right {
     display: flex;
     align-items: center;

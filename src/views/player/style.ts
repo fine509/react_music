@@ -3,6 +3,9 @@ import styled from 'styled-components'
 export const PlayerWrapper = styled.div`
     position:relative;
     display:flex;
+    height:auto;
+    min-height:567px;
+    background-color:#fff;
     a {
                 color:#000;
             }
@@ -12,9 +15,27 @@ export const PlayerWrapper = styled.div`
         box-sizing:border-box;
         padding:47px 30px 40px 39px;
         display:flex;
+        border-right:solid 1px #eee;
         &>div {
             display:inline-block;
         }
+        .play-lyric{
+            .topHalf {
+                h3 {
+                    margin: 2px 0 ;
+                }
+            }
+            .showMore {
+                color:blue;
+                cursor:pointer;
+            }
+            .lowerHalf {
+                display:none;
+                h3 {
+                    margin: 2px 0 ;
+                }
+            }
+            }
         .image {
             flex: 0 0 206px;
             height:205px;
